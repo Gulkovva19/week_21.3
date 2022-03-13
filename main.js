@@ -7,9 +7,10 @@ btn.addEventListener('click', (event) => {
         {
             method: 'POST',
             body: new FormData(form),
-            headers: { "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8" },
-        },
-    )
+            headers: {
+                "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8"
+            },
+        })
         .then(response => response.json())
         .catch(error => console.log(error));
-})
+});
